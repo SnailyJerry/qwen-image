@@ -1,7 +1,15 @@
 {
-  "name": "my-bulkimage-app",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "vercel dev"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
 }
