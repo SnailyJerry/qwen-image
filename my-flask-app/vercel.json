@@ -1,0 +1,7 @@
+{
+  "name": "my-bulkimage-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vercel dev"
+  }
+}
